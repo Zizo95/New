@@ -1,9 +1,12 @@
 .weather {
-  border: solid grey;
+  border: none;
   padding: 15px;
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
+  background-color: white;
+  opacity: 0.70;
+  
 }
 
 form {
@@ -13,10 +16,11 @@ form {
 
 body {
   font-family: arial, sans-serif;
+  color: black;
 }
 
 h1 {
-  color: #878787;
+  
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -32,8 +36,6 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-
-  color: rgb(135, 135, 135);
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -43,5 +45,36 @@ li:first-letter {
   text-transform: capitalize;
 }
 #temperature{
-  font-size: 24px;
+  font-size: 30px;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+ol{
+  text-align: center;
+  
+}
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+
