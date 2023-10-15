@@ -77,4 +77,7 @@ ol{
   top: 0;
   z-index: -1;
 }
+.move{
+  color: blue;
+}
 
