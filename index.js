@@ -175,7 +175,7 @@ function displayTemperature(response){
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
-  let dateElement = document.querySelector("#date");
+  let dateElement = document.querySelector("#current-time");
   let iconElement = document.querySelector("#icon");
 
   let celsiusTemperature = response.data.main.temp;
@@ -191,6 +191,7 @@ function displayTemperature(response){
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  console.log(response.data)
   getForecast(response.data.coord);
   }
   
